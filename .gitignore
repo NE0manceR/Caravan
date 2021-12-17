@@ -40,7 +40,11 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-test-folder/
+_install/
+assets/
+cache/
+system/
+upload/
 
 # TypeScript v1 declaration files
 typings/

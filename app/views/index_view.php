@@ -35,25 +35,163 @@
 </section>
 
 <section class="category">
-  <div class="category__crumbs">
-    <div class="category__arrow">Вибір</div>
-    <span class="category__text">категорії</span>
-  </div>
-  <div class="category__cards-wrap">
-    <?php
-    for ($i = 0; $i < 30; $i++) {
-      echo '
-      <a href="/" class="category__card popular">
-        <img class="category__card-img" src="style/images/img/item.png" alt="img">
-        <span class="category__card-text">
-          Кузовные
-          запчасти
-        </span>
-      </a>';
-    }
-    ?>
+  <div class="crumbs">
+    <div class="crumbs-arrow">Вибір</div>
+    <span class="crumbs-text">категорії</span>
   </div>
   <section class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdoJIPY86QY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video__cover">
+      <img class="video__play-icon" src="style/images/home-page/video-play.svg" alt="img">
+    </div>
+    <iframe id="home-video" controls="0" width="100%" src="https://www.youtube.com/embed/FdoJIPY86QY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
 </section>
+
+<section class="how-work">
+  <div class="crumbs">
+    <div class="crumbs-arrow">Як ми</div>
+    <span class="crumbs-text">працюємо</span>
+  </div>
+  <div class="blocks-wrap">
+    <div class="block">
+      <div class="block-title">
+        <span class="block-title-text">Оформлення замовлення</span>
+        <div class="title-icon"></div>
+      </div>
+      <div class="block-text">
+        <span class="block-number">
+          01
+        </span>
+        <span class="block-info">
+          Виберіть товар
+          на сайті і зробіть замовлення
+        </span>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-title">
+        <span class="block-title-text">Зворотній зв’язок</span>
+        <div class="title-icon phone-icon"></div>
+      </div>
+      <div class="block-text">
+        <span class="block-number">
+          02
+        </span>
+        <span class="block-info">
+        Протягом 20 хвилин наш менеджер зв'яжеться з Вами
+        </span>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-title">
+        <span class="block-title-text">Замовлення товару</span>
+        <div class="title-icon home-icon"></div>
+      </div>
+      <div class="block-text">
+        <span class="block-number">
+        03
+        </span>
+        <span class="block-info">
+          Проводиться замовлення товару
+          в Польщі на базі
+        </span>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block-title">
+        <span class="block-title-text">Доставка товару</span>
+        <div class="title-icon box-icon"></div>
+      </div>
+      <div class="block-text">
+        <span class="block-number">
+          04
+        </span>
+        <span class="block-info">
+          Виберіть товар
+          на сайті і зробіть замовлення
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="dot-line"></div>
+  <div class="dot">
+    <img src="style/images/home-page/benefits-icons/dot.svg" alt="img">
+  </div>
+  <div class="info-block">
+    <img src="style/images/home-page/benefits-icons/1.svg" alt="img">
+    <span class="info-block-text">
+    Простий спосіб <span>оплати</span>
+    </span>
+  </div>
+  <div class="dot">
+    <img src="style/images/home-page/benefits-icons/dot.svg" alt="img">
+  </div>
+  <div class="info-block">
+    <img src="style/images/home-page/benefits-icons/2.svg" alt="img">
+    <span class="info-block-text">
+    Простий спосіб <span>оплати</span>
+    </span>
+  </div>
+  <div class="dot">
+    <img src="style/images/home-page/benefits-icons/dot.svg" alt="img">
+  </div>
+  <div class="info-block">
+    <img src="style/images/home-page/benefits-icons/3.svg" alt="img">
+    <span class="info-block-text">
+      <span>Швидка</span> доставка з <span>Польщі</span>
+    </span>
+  </div>
+  <div class="dot">
+    <img src="style/images/home-page/benefits-icons/dot.svg" alt="img">
+  </div>
+
+</section>
+
+<section class="articles">
+  <div class="crumbs">
+    <div class="crumbs-arrow">Новини</div>
+    <span class="crumbs-text"> та статті</span>
+  </div>
+  <div class="article-wrap">
+    <a href="" class="article">
+      <img class="article-img" src="style/images/home-page/article-imgs/1.png" alt="img">
+      <span class="article-title">Запчастини до ходової</span>
+      <div class="line"></div>
+    </a>
+
+    <a href="" class="article">
+      <img class="article-img" src="style/images/home-page/article-imgs/2.png" alt="img">
+      <span class="article-title">Огляд нової Тойотки</span>
+      <div class="line"></div>
+    </a>
+
+    <a href="" class="article">
+      <img class="article-img" src="style/images/home-page/article-imgs/1.png" alt="img">
+      <span class="article-title">Нова крута Ауді</span>
+      <div class="line"></div>
+    </a>
+
+    <a href="" class="article">
+      <img class="article-img" src="style/images/home-page/article-imgs/2.png" alt="img">
+      <span class="article-title">Огляд нової Тойотки</span>
+      <div class="line"></div>
+    </a>
+
+    <a href="" class="article">
+      <img class="article-img" src="style/images/home-page/article-imgs/1.png" alt="img">
+      <span class="article-title">Нова крута Ауді</span>
+      <div class="line"></div>
+    </a>
+
+    <a href="" class="article">
+      <img class="article-img" src="style/images/home-page/article-imgs/2.png" alt="img">
+      <span class="article-title">Новий подих твого мотору</span>
+      <div class="line"></div>
+    </a>
+  </div>
+</section>
+
+

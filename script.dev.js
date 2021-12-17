@@ -2,6 +2,8 @@
 
 var itemStatus = false;
 var filterIndex;
+var videoW = $('.video iframe').width();
+$('.video iframe').css('height', videoW / 16 * 9);
 
 function showFilterLine() {
   $('.filter-line').css('width', "".concat($('.filter__item:eq(0)').offset().left + 20, "px"));
@@ -254,7 +256,8 @@ $('.login-type__phone').on('click', function () {
   $('.input__email').hide();
   $('.input__phone').fadeIn();
 });
-$('.phone-icon, .item').on('click', function () {
+$('.phone-icon').on('click', function () {
+  console.log('www');
   $('.header__phone-desctop').fadeToggle();
 });
 $('.header__call').on('click', function () {
@@ -268,5 +271,9 @@ $('body').on('click', function (event) {
   if (event.target.classList[0] !== 'mobile-phone-icon') {
     $('.phone-drop-down-mobile').fadeOut();
   }
+});
+$('.video__play-icon').on('click', function () {
+  $('.video__cover').fadeOut();
+  $("#home-video")[0].src += "?autoplay=1";
 });
 Maska.create('.masked');

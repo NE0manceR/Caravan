@@ -1,5 +1,7 @@
 let itemStatus = false;
 let filterIndex;
+let videoW = $('.video iframe').width();
+$('.video iframe').css('height', videoW / 16 * 9);
 
 function showFilterLine() {
   $('.filter-line').css('width', `${$('.filter__item:eq(0)').offset().left + 20}px`)
@@ -288,6 +290,11 @@ $('body').on('click', (event) => {
   ) {
     $('.phone-drop-down-mobile').fadeOut();
   }
+})
+$('.video__play-icon').on('click', () => {
+  $('.video__cover').fadeOut();
+  $("#home-video")[0].src += "?autoplay=1";
+
 })
 
 Maska.create('.masked');
